@@ -1,0 +1,12 @@
+version: '3'
+services:
+
+  sample-api-server:
+    build: ./
+    container_name: sample-api-server
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/go/src/github.com/yutaiii/swagger-api-document-sample
+    working_dir: /go/src/github.com/yutaiii/swagger-api-document-sample
+    command: go run main.go

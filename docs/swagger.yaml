@@ -1,0 +1,25 @@
+basePath: /
+info:
+  contact:
+    email: support@example.com
+    name: Example API Support
+    url: http://example.com/support
+  description: This is a sample server.
+  title: Swagger Example API
+  version: "1.0"
+paths:
+  /hello-world:
+    get:
+      consumes:
+      - application/json
+      description: say hello world
+      operationId: hello-world
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: hello world
+swagger: "2.0"
